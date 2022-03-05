@@ -1,0 +1,44 @@
+.home-component
+{
+    display: flex;
+    flex-direction: column;
+    .transfer {
+        width: 100%;
+    }
+
+    .history {
+        width: 100%;
+
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    .home-component
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .transfer {
+            width: 48%;
+        }
+        .history {
+            width: 48%;
+    
+        }
+    }    
+}
+
+@media screen and (min-width: 900px) {
+    .home-component
+    {
+        .transfer {
+            width: 32%;
+        }
+    
+        .history {
+            width: 65%;
+    
+        }
+    }    
+}

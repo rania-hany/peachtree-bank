@@ -1,0 +1,15 @@
+
+label{
+    font-size: 12px;
+}
+
+.form {
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.buttons-holder {
+    display: flex;
+    flex-direction: row-reverse;
+}

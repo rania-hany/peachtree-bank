@@ -1,0 +1,28 @@
+@import './../../bb-ui/styles/vars';
+
+.wrapper {
+    width:100%;
+    max-width: 500px;
+    height: 100%;
+    max-height: 500px;
+    border-radius: 12px;
+    background-color: white;
+    
+    .head {
+        padding: 1.2rem;
+        background-color: $primary-blue;
+        color: white;
+        border-radius: 12px 12px 0px 0px;
+        .icon {
+            margin-right: 10px;
+        }
+    }
+
+    .body{
+        padding: 2rem;
+        font-family: sans-serif;
+
+    }
+    
+}
+

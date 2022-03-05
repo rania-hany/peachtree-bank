@@ -26,17 +26,17 @@
   }
 }
 
-.footer {
+.footer-container {
   background-color: white;
   position: fixed;
   bottom: 0px;
+  padding: 10px 0px 0px 0px;
 }
 
-
-
-
-
-
+.content{
+  margin: 0px 5vw;
+  padding-bottom: 20px;
+}
 
 @media screen and (min-width: 600px) {
   .header {
@@ -47,10 +47,17 @@
       display: block;
     }
   }
+  .content{
+    margin: 3vw 10vw;
+  }
 }
 
 
-
+@media screen and (min-width: 1100px) {
+  .content{
+    margin: 5vw 17vw;
+  }
+}
 
 
 
@@ -81,15 +88,6 @@
 
   .spacer {
     flex: 1;
-  }
-
-  .content {
-    display: flex;
-    margin: 82px auto 32px;
-    padding: 0 16px;
-    max-width: 960px;
-    flex-direction: column;
-    align-items: center;
   }
 
   a,
