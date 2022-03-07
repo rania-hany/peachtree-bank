@@ -25,9 +25,16 @@ describe('FilterComponent', () => {
 
   it('should trigger event', () => {
     spyOn(component.inputChange, 'emit');
-    const event = new InputEvent('change');
+    const event = { target: { value: 'hello' } } as any;
 
     component.onInputChange(event);
     expect(component.inputChange.emit).toHaveBeenCalled();
+  });
+
+  it('should not trigger event', () => {
+    spyOn(component.inputChange, 'emit');
+    const event = { } as any; 
+    component.onInputChange(event);
+    expect(component.inputChange.emit).not.toHaveBeenCalled();
   });
 });

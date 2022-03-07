@@ -10,7 +10,7 @@ export class FilterComponent {
 
   onInputChange(event: Event): void {
     if ((event.target as HTMLInputElement)?.value) {
-      this.inputChange.emit((event.target as HTMLInputElement)?.value);
+      this.inputChange.emit((event.target as HTMLInputElement).value);
     }
   }
 }

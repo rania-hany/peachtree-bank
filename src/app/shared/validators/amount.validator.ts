@@ -9,7 +9,7 @@ export function amount(): ValidatorFn {
     } else if (control.value < 0) {
       return { msg: 'Negative numbers are not allowed' };
     } else if (control.value < 500) {
-      return { msg: 'amount below -€500 not allowed' };
+      return { msg: 'amount below €500 not allowed' };
     } else {
       return null;
     }

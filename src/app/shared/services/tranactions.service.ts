@@ -16,12 +16,6 @@ export class TranactionsService {
   constructor(private http: HttpClient) {}
   transactions: Array<Transaction> = [];
 
-  // return of(transactionsData).pipe(
-  //   map((response) => {
-  //     return (this.transactions = [...this.mapData(response.data)]);
-  //   })
-  // );
-
   getTransactionHistory() {
    return this.http
       .get(routes.transactions)

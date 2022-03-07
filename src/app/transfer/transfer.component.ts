@@ -62,7 +62,7 @@ export class TransferComponent implements OnInit {
     this.tranactionsService.addTransaction(this.newTransaction);
     this.transferForm.reset();
     this.newTransaction = {} as Transaction;
-    this.showModal = false;
+    this.closeModal();
   }
   closeModal() {
     this.showModal = false;
