@@ -1,15 +1,41 @@
-
-label{
-    font-size: 12px;
+label {
+  font-size: 12px;
+}
+.control-group {
+  margin-bottom: 20px;
 }
 
 .form {
-    height: 250px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 .buttons-holder {
-    display: flex;
-    flex-direction: row-reverse;
+  display: flex;
+  flex-direction: row-reverse;
 }
+.inline-error {
+  color: red;
+  margin-top: 5px;
+}
+
+.modal {
+  display: block;
+  .modal-dialog {
+    top: 20%;
+    width: 50%;
+  }
+}
+.modal-back{
+    display: block;
+    position:fixed;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.534);  
+}
+

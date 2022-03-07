@@ -1,0 +1,39 @@
+
+@import '../styles/variables';
+
+.history-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 3.2em;
+    margin: 15px 0px;
+    width: 100%;
+
+    .decorator{
+        width: 5px;
+        height: 4em;
+
+    }
+
+    .date{
+        width: 20%;
+        margin: 10px;
+    }
+    .merchant-details{
+        width: 80%
+    }
+    .price{
+        width: 20%;
+        text-align: right;
+        &.green {
+            color: $green_color;
+        }
+        &.red {
+            color: $red_color;
+        }
+    }
+}
+
+div:last-child > hr{
+    display: none;    
+}

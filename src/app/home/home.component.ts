@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   transferTitle="<strong>Make</strong> Transfer";
+  historyTitle="Transaction <strong>List</strong>";
   
   constructor() { }
 

@@ -1,9 +1,12 @@
 <div class="home-component">
     <div class="transfer">
-        <app-panel [title]="transferTitle" [icon]="'bi-wallet2'">
+        <app-panel [title]="transferTitle" [icon]="'lni-wallet'">
            <app-transfer></app-transfer>
         </app-panel>
     </div>
     <div class="history">
+        <app-panel [title]="historyTitle" [icon]="'lni-list'">
+            <transaction-history></transaction-history>
+        </app-panel>
     </div>
 </div>

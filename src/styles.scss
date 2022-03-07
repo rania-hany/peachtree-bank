@@ -1,21 +1,52 @@
-@import '~bootstrap/dist/css/bootstrap.min.css';
-@import './app/styles/variables';
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "./app/styles/variables";
 
 /* You can add global styles to this file, and also import other style files */
 body {
-    margin: 0%;
+  margin: 0%;
+}
+
+.dim-button .btn-primary {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+    pointer-events: none;
+    cursor:not-allowed;
 }
 
 .btn-primary {
-    background-color: $orange_color;
-    border: 1px solid $orange_dark;
+  background-color: $orange_color;
+  border: 1px solid $orange_dark;
 
-    &:hover{
-        border: 1px solid $orange_darker;
-        background-color: $orange_dark;
-    }
-    &:focus:active{
-        background-color: $orange_darker;
-        border: 1px solid $orange_darker;
-    }
+  &:hover {
+    border: 1px solid $orange_darker;
+    background-color: $orange_dark;
+  }
+  &:focus:active {
+    background-color: $orange_darker;
+    border: 1px solid $orange_darker;
+  }
 }
+
+.merchant-details {
+  width: 100%;
+}
+.input-group {
+  position: relative;
+  display: table;
+  .input-group-prepend {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+}
+

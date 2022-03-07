@@ -1,17 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PanelComponent } from './panel/panel.component';
+import { PanelComponent } from './components/panel/panel.component';
+import { TransactionsPipe } from './pipes/transactions.pipe';
 
-
+const components = [PanelComponent];
 @NgModule({
-  declarations: [
-    PanelComponent
-  ],
-  imports: [
-    CommonModule
-  ],
-  exports: [
-    PanelComponent
-  ]
+  declarations: [...components, TransactionsPipe],
+  imports: [CommonModule],
+  exports: [...components, TransactionsPipe],
 })
-export class SharedModule { }
+export class SharedModule {}
