@@ -2,19 +2,8 @@
 
 .wrapper {
     width:100%;
-    max-width: 500px;
-    max-height: 520px;
     border-radius: 12px;
     background-color: white;
-    overflow-x: hidden;
-    /* Hide scrollbar for IE, Edge and Firefox */
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-    
-    /* Hide scrollbar for Chrome, Safari and Opera */
-    &::-webkit-scrollbar {
-        display: none;
-    }
 
     .head {
         padding: 1.7rem;
@@ -29,7 +18,5 @@
     .body{
         padding: 1.7rem;
         font-family: sans-serif;
-
     }
 }
-

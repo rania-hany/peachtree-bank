@@ -45,10 +45,10 @@
             </div>
             <div class="modal-body">
                 <p>Are you ready to send out this transfer?</p>
-                <div><strong>It will be send to account:</strong></div>
-                <div>{{newTransaction.merchant.name }}</div>
-                <div><strong>With the amount of:</strong></div>
-                <div>{{newTransaction.transaction.amountCurrency.amount|currency:newTransaction.transaction.amountCurrency.currencyCode }}</div>
+                <p><strong>It will be send to account:</strong></p>
+                <p>{{newTransaction.merchant.name }}</p>
+                <p><strong>With the amount of:</strong></p>
+                <p>{{newTransaction.transaction.amountCurrency.amount|currency:newTransaction.transaction.amountCurrency.currencyCode }}</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" (click)="closeModal()">Close</button>

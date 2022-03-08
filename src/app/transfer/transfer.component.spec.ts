@@ -97,14 +97,12 @@ describe('TransferComponent', () => {
     component.onSubmit();
     expect(component.showModal).toBeTruthy();
     component.confirm();
-    expect(
-      service.transactions[service.transactions.length - 1].merchant.name
-    ).toBe('BackBase@test.com');
+    expect(service.transactions[service.transactions.length - 1].merchant.name).toBe('BackBase@test.com');
     expect(component.closeModal).toHaveBeenCalled();
     expect(component.showModal).toBeFalsy();
   });
+  
   it('should call closeModal', () => {
-
     component.closeModal();
     expect(component.showModal).toBeFalsy();
   });

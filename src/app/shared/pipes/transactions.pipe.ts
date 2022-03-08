@@ -3,11 +3,12 @@ import { Transaction } from '../models/transaction.model';
 
 @Pipe({
   name: 'transactions',
+  pure: false
 })
 export class TransactionsPipe implements PipeTransform {
   transform(value?: Transaction[] | null, args?: any): any {
-    if (!value) return value;
-    if (!args) return value;
+    if(!value)return null;
+    if(!args)return value;
 
     args = args.toLowerCase();
 

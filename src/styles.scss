@@ -6,10 +6,12 @@ body {
   margin: 0%;
 }
 
+
+/* Buttons */
 .dim-button .btn-primary {
-    border: 1px solid #999999;
-    background-color: #cccccc;
-    color: #666666;
+    border: 1px solid $gray_dark;
+    background-color: $gray_light;
+    color: $gray_darker;
     pointer-events: none;
     cursor:not-allowed;
 }
@@ -27,26 +29,3 @@ body {
     border: 1px solid $orange_darker;
   }
 }
-
-.merchant-details {
-  width: 100%;
-}
-.input-group {
-  position: relative;
-  display: table;
-  .input-group-prepend {
-    padding: 6px 12px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1;
-    color: #555;
-    text-align: center;
-    background-color: #eee;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 1%;
-    white-space: nowrap;
-    vertical-align: middle;
-  }
-}
-

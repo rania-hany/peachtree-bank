@@ -1,7 +1,7 @@
-<div>
-  <div class="form-group">
-    <app-filter (inputChange)="filterResult($event)"></app-filter>
-  </div>
+<div class="form-group filter">
+  <app-filter (inputChange)="filterResult($event)"></app-filter>
+</div>
+<div class="wee">
   <div *ngFor="let tranaction of transactions$ | async | transactions: searchFilter; let i = index">
 
     <app-transaction-item class="history-wrapper">
@@ -12,8 +12,9 @@
       <div class="transfer-data" data-test-hook='transactionMerchantName'>{{ tranaction.merchant.name }}</div>
       <div class="transfer-data" data-test-hook='transactionType'>{{ tranaction.transaction.type }}</div>
 
-      <div class="price" data-test-hook='transactionAmount' 
-      [ngClass]="tranaction.transaction.creditDebitIndicator == 'CRDT' ? 'green' : 'red'"> € {{ tranaction.transaction.amountCurrency.amount }}
+      <div class="price" data-test-hook='transactionAmount'
+        [ngClass]="tranaction.transaction.creditDebitIndicator == 'CRDT' ? 'green' : 'red'"> € {{
+        tranaction.transaction.amountCurrency.amount }}
       </div>
     </app-transaction-item>
 
