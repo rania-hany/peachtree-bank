@@ -19,8 +19,8 @@
         <label>Amount</label>
         <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">€</span>
-            <input formControlName="amount" name="amount"
-                type="text" class="form-control" placeholder="amount" aria-describedby="basic-addon1">
+            <input formControlName="amount" name="amount" type="text" class="form-control" placeholder="amount"
+                aria-describedby="basic-addon1">
         </div>
         <div *ngIf="transferForm.get('amount')?.invalid && (transferForm.get('amount')?.dirty || transferForm.get('amount')?.touched)"
             class="inline-error">
@@ -30,30 +30,20 @@
         </div>
     </div>
     <div class="buttons-holder" [ngClass]="{'dim-button':!transferForm.valid}">
-        <app-submit-button  (submitForm)="onSubmit()"></app-submit-button>
+        <app-submit-button (submitForm)="onSubmit()"></app-submit-button>
     </div>
 </form>
 
-<div class="modal" *ngIf="showModal">
-    <div class="modal-back" (click)="closeModal()"></div>
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" (click)="closeModal()"><span aria-hidden="true">&times;</span>
-                    <span class="sr-only">Close</span></button>
-                <h4 class="modal-title">Review Transfer</h4>
-            </div>
-            <div class="modal-body">
-                <p>Are you ready to send out this transfer?</p>
-                <p><strong>It will be send to account:</strong></p>
-                <p>{{newTransaction.merchant.name }}</p>
-                <p><strong>With the amount of:</strong></p>
-                <p>{{newTransaction.transaction.amountCurrency.amount|currency:newTransaction.transaction.amountCurrency.currencyCode }}</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" (click)="closeModal()">Close</button>
-                <button class="btn btn-primary" (click)="confirm()">Send Transfer</button>
-            </div>
-        </div>
+
+<app-modal *ngIf="showModal" title="'Review Transfer'" (onClose)="closeModal()">
+    <h4 element="modal-title"><strong>Review</strong> Transfer</h4>
+    <div element='modal-content'>
+        <p>Are you ready to send out this transfer?</p>
+        <p><strong>It will be send to account:</strong></p>
+        <p>{{newTransaction.merchant.name }}</p>
+        <p><strong>With the amount of:</strong></p>
+        <p>{{newTransaction.transaction.amountCurrency.amount|currency:newTransaction.transaction.amountCurrency.currencyCode }}</p>
     </div>
-</div>
+    <button element="modal-button" class="btn btn-primary" (click)="confirm()">Send Transfer</button>
+            
+</app-modal>

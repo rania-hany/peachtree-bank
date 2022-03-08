@@ -1,7 +1,7 @@
 <div class="form-group filter">
   <app-filter (inputChange)="filterResult($event)"></app-filter>
 </div>
-<div class="wee">
+<div class="scroller">
   <div *ngFor="let tranaction of transactions$ | async | transactions: searchFilter; let i = index">
 
     <app-transaction-item class="history-wrapper">
