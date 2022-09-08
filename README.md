@@ -1,6 +1,7 @@
 <h1 align="center"> 🍑 PeachtreeBank </h1>
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
+You can Check it live through this link: https://flamboyant-edison-526a87.netlify.app/
 
 ## 🧐 What's Inside
 
@@ -22,7 +23,7 @@ This app is deployed & CI/CD by Netlify
 _Check it from the below link_
 
 
-[![Check on Netlify](https://www.netlify.com/img/deploy/button.svg)](https://mystifying-bardeen-bb8716.netlify.app/)
+[![Check on Netlify](https://www.netlify.com/img/deploy/button.svg)](https://flamboyant-edison-526a87.netlify.app/)
 
 ## 📜 Available Scripts
 
